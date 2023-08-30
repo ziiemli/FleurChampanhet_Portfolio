@@ -1,18 +1,20 @@
 import React from "react"
-import Nav from "../components/Header"
-import { Link } from "react-router-dom"
+import Header from "../components/Header"
 import HomeCategory from "../components/HomeCategory"
+import Data from "../data/data.json"
 
 const Home = () => {
+    const dataCategories = Data.homeCategories
+
     return (
-        <main>
-            <Nav />
+        <main className="home">
+            <Header />
             <section className="home__top">
                 <picture>
                     <source media="(min-width: 996px)" srcSet={"/src/assets/Home/Home_D.jpg"} />
                     <img src={"/src/assets/Home/Home_M.jpg"} alt="Logo of Ziiemli" />
                 </picture>
-                <div>
+                <div className="home__top__name">
                     <h1>
                         <strong>FLEUR</strong>
                         <strong>CHAMPANHET</strong>
@@ -22,10 +24,9 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <HomeCategory to="fiction" img_M="/src/assets/Home/Home_Fiction_M.jpg" img_D="/src/assets/Home/Home_Fiction_D.jpg" title={"FICTION"}/>
-                <HomeCategory to="clip" img_M="/src/assets/Home/Home_Fiction_M.jpg" img_D="/src/assets/Home/Home_Fiction_D.jpg" title={"FICTION"}/>
-                <HomeCategory to="pub" img_M="/src/assets/Home/Home_Fiction_M.jpg" img_D="/src/assets/Home/Home_Fiction_D.jpg" title={"FICTION"}/>
-                <HomeCategory to="photo" img_M="/src/assets/Home/Home_Fiction_M.jpg" img_D="/src/assets/Home/Home_Fiction_D.jpg" title={"FICTION"}/>
+                {dataCategories && dataCategories.map((category, index) => (
+                    <HomeCategory to={category.to} img_M={category.img_M} img_D={category.img_D} title={category.title} key={index} />
+                ))}
             </section>
         </main>
     )

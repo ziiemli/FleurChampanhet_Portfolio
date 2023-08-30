@@ -5,9 +5,9 @@ const Header = () => {
     return (
         <section className="header">
             <Link to="/">
-                <img src="/src/assets/Logo.svg" alt="Logo of Fleur Champanhet" />
+                <img className="header__logo" src="/src/assets/Logo.svg" alt="Logo of Fleur Champanhet" />
             </Link>
-            <img src="/src/assets/Burger.svg" alt="Burger Logo" />
+            <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" />
         </section>
     )
 }

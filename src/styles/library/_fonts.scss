@@ -1,0 +1,47 @@
+//_____FONTS_____//
+
+
+//VARIABLES
+:root {
+    --home--h1: 1.875rem;
+    --home--02: 1.25rem;
+
+}
+
+@font-face {
+    font-family: "LemonMilkRegular";
+    src: url(../fonts/lemonMilk/LEMONMILK-Regular.woff);
+    src: url(../fonts/lemonMilk/LEMONMILK-Regular.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family: "LemonMilkLight";
+    src: url(../fonts/lemonMilk/LEMONMILK-Light.woff);
+    src: url(../fonts/lemonMilk/LEMONMILK-Light.woff2);
+    font-display: swap;
+}
+
+
+//BODY
+body {
+    color: white;
+}
+
+//HOME
+.home {
+    &__top__name {
+        h1 {
+            font-family: "LemonMilkRegular", sans-serif;
+            font-size: var(--home--h1);
+        }
+        p {
+            font-family: "LemonMilkLight", sans-serif;
+            font-size: var(--home--02);
+        }
+    }
+}
+
+.homeCategory h2{
+    font-family: "LemonMilkRegular", sans-serif;
+    font-size: var(--home--02);
+}

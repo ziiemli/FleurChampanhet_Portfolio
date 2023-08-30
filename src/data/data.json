@@ -1,0 +1,30 @@
+{
+    "homeCategories":[
+        {
+            "to": "fiction",
+            "title": "FICTION",
+            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
+            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+        },
+        {
+            "to": "clip",
+            "title": "CLIP",
+            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
+            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+        },
+        {
+            "to": "pub",
+            "title": "PUB",
+            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
+            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+        },
+        {
+            "to": "photo",
+            "title": "PHOTO",
+            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
+            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+        }
+        
+    ]
+
+}

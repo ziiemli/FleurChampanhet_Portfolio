@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const Clip = () => {
     return (
         <div>
-            CLIP
+            <Header />
         </div>
     );
 };
