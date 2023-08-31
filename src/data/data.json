@@ -3,26 +3,26 @@
         {
             "to": "fiction",
             "title": "FICTION",
-            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
-            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+            "img_M": "/src/assets/Home/Home_Fiction_M.webp",
+            "img_D":"/src/assets/Home/Home_Fiction_D.webp"
         },
         {
             "to": "clip",
             "title": "CLIP",
-            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
-            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+            "img_M": "/src/assets/Home/Home_Fiction_M.webp",
+            "img_D":"/src/assets/Home/Home_Fiction_D.webp"
         },
         {
             "to": "pub",
             "title": "PUB",
-            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
-            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+            "img_M": "/src/assets/Home/Home_Fiction_M.webp",
+            "img_D":"/src/assets/Home/Home_Fiction_D.webp"
         },
         {
             "to": "photo",
             "title": "PHOTO",
-            "img_M": "/src/assets/Home/Home_Fiction_M.jpg",
-            "img_D":"/src/assets/Home/Home_Fiction_D.jpg"
+            "img_M": "/src/assets/Home/Home_Fiction_M.webp",
+            "img_D":"/src/assets/Home/Home_Fiction_D.webp"
         }
         
     ]

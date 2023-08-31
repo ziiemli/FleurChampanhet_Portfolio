@@ -1,6 +1,7 @@
 //_____HOME_____//
 
 .home {
+    overflow: hidden;
     padding-bottom: 4rem;
     &__top {
         &__name {
@@ -13,9 +14,40 @@
                     margin-bottom: 1.3rem;
                 }
             }
-            a {
+            &__discover {
                 display: none;
             }
+        }
+    }
+}
+
+//_____HOMECATEGORY RESPONSIVE DESKTOP_____//
+
+@media screen and (min-width: 996px) {
+    .home {
+        padding-bottom: 0;
+        .header {
+            position: absolute;
+        }
+        picture img {
+            width: 100%;
+        }
+        &__top {
+            position: relative;
+            &__name {
+                position: absolute;
+                padding: 0;
+                top: 10rem;
+                left: 11rem;
+                &__discover {
+                    display: flex;
+                    margin-top: 18rem;
+                }
+            }
+        }
+        &__categories {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 }

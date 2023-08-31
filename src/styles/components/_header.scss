@@ -1,4 +1,4 @@
-//_____NAV_____//
+//_____HEADER_____//
 
 .header {
     width: 100%;
@@ -10,10 +10,24 @@
         height: 2rem;
         &:hover{
             scale: 1.2;
-            transition: 0.5 ease-in-out;
+            transition: 0.5s;
         }
     }
     &__burger{
         height: 1rem;
+    }
+}
+
+//_____HEADER RESPONSIVE_____//
+
+@media screen and (min-width: 996px) {
+    .header {
+        padding: 3rem 3.4rem 0rem 3.4rem;
+        &__logo{
+            height: 3.5rem;
+        }
+        &__burger{
+            height: 2rem;
+        }
     }
 }

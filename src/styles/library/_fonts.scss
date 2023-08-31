@@ -4,6 +4,7 @@
 //VARIABLES
 :root {
     --home--h1: 1.875rem;
+    --home--h1spacing: 0.1875rem;
     --home--02: 1.25rem;
 
 }
@@ -33,10 +34,16 @@ body {
         h1 {
             font-family: "LemonMilkRegular", sans-serif;
             font-size: var(--home--h1);
+            letter-spacing: 0.1875rem;
         }
         p {
             font-family: "LemonMilkLight", sans-serif;
             font-size: var(--home--02);
+            font-weight: 300;
+        }
+        a {
+            font-family: "LemonMilkLight", sans-serif;
+            font-size: 1.5rem;
         }
     }
 }
