@@ -1,12 +1,12 @@
 //_____FONTS_____//
 
-
 //VARIABLES
 :root {
     --home--h1: 1.875rem;
     --home--h1spacing: 0.1875rem;
     --home--02: 1.25rem;
-
+    --category--01: 2.8rem;
+    --footer: 1rem;
 }
 
 @font-face {
@@ -21,11 +21,36 @@
     src: url(./fonts/lemonMilk/LEMONMILK-Light.woff2);
     font-display: swap;
 }
-
+@font-face {
+    font-family: "HindMaduraiRegular";
+    src: url(../fonts/hindMadurai/HindMadurai-Regular.woff);
+    src: url(./fonts/hindMadurai/HindMadurai-Regular.woff2);
+    font-display: swap;
+}
+@font-face {
+    font-family: "HindMadurai";
+    src: url(../fonts/hindMadurai/HindMadurai-Light.woff);
+    src: url(../fonts/hindMadurai/HindMadurai-Light.woff2);
+    font-display: swap;
+}
 
 //BODY
 body {
     color: white;
+}
+
+//MENU
+.menu__active {
+    &__nav {
+        &__part {
+            font-family: "LemonMilkRegular", sans-serif;
+            font-size: var(--home--h1);
+        }
+        &__subpart {
+            font-family: "LemonMilkLight", sans-serif;
+            font-size: var(--home--02);
+        }
+    }
 }
 
 //HOME
@@ -48,7 +73,26 @@ body {
     }
 }
 
-.homeCategory h2{
+.homeCategory h2 {
     font-family: "LemonMilkRegular", sans-serif;
     font-size: var(--home--02);
+}
+
+//Category
+.category__topPart__text {
+    h1 {
+        font-family: "LemonMilkRegular", sans-serif;
+        font-size: var(--category--01);
+    }
+    p {
+        font-family: "LemonMilkLight", sans-serif;
+        font-size: var(--home--02);
+    }
+}
+
+
+//Footer
+footer{
+    font-family: "HindMaduraiRegular", sans-serif;
+    font-size: var(--footer);
 }

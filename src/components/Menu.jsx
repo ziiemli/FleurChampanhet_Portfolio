@@ -26,29 +26,29 @@ const Menu = () => {
             <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />
             {menu && (
                 <section className="menu__active">
-                    <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />
+                    <img className="header__burger menu__active__burger" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />
                     <div className="menu__active__nav">
                         <NavLink to="/">
-                            <p>HOME</p>
+                            <p className="menu__active__nav__part">HOME</p>
                             {/* {querystring && querystring === "home" ? <img className="menu__active__nav__diamond" src={process.env.PUBLIC_URL + "/assets/diamond.svg"} alt="diamond indicating selection" /> : <img className="menu__active__nav__diamond diamondOpacity" src={process.env.PUBLIC_URL + "/assets/diamond.svg"} alt="diamond indicating selection" />} */}
                         </NavLink>
                         <div>
-                            <p>PROJECTS</p>
+                            <p className="menu__active__nav__part">PROJECTS</p>
                             <NavLink to="/fiction">
-                                <p>FICTION</p>
+                                <p className="menu__active__nav__subpart">FICTION</p>
                             </NavLink>
                             <NavLink to="/clip">
-                                <p>CLIP</p>
+                                <p className="menu__active__nav__subpart">CLIP</p>
                             </NavLink>
                             <NavLink to="/pub">
-                                <p>PUB</p>
+                                <p className="menu__active__nav__subpart">PUB</p>
                             </NavLink>
                             <NavLink to="/photo">
-                                <p>PHOTO</p>
+                                <p className="menu__active__nav__subpart">PHOTO</p>
                             </NavLink>
                         </div>
                         <NavLink to="/about">
-                            <p>ABOUT</p>
+                            <p className="menu__active__nav__part">ABOUT</p>
                         </NavLink>
                     </div>
                 </section>
