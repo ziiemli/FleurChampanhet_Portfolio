@@ -5,6 +5,7 @@ import Fiction from "./pages/Fiction"
 import Clip from "./pages/Clip"
 import Pub from "./pages/Pub"
 import Photo from "./pages/Photo"
+import About from "./pages/About"
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/clip" element={<Clip />} />
                 <Route path="/pub" element={<Pub />} />
                 <Route path="/photo" element={<Photo />} />
+                <Route path="/about" element={<About />} />
             </Routes>
         </BrowserRouter>
     )

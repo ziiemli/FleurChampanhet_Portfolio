@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import Menu from "./Menu"
 
 const Header = () => {
     return (
@@ -7,7 +8,8 @@ const Header = () => {
             <Link to="/">
                 <img className="header__logo" src="/src/assets/Logo.svg" alt="Logo of Fleur Champanhet" />
             </Link>
-            <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" />
+            {/* <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" /> */}
+            <Menu/>
         </section>
     )
 }

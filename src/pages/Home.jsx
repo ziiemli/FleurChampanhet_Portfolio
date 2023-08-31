@@ -12,7 +12,7 @@ const Home = () => {
                 <Header />
                 <picture>
                     <source media="(min-width: 996px)" srcSet={"/src/assets/Home/Home_D.jpg"} />
-                    <img src={"/src/assets/Home/Home_M.jpg"} alt="Logo of Ziiemli" />
+                    <img src={"/src/assets/Home/Home_M.jpg"} alt="Fleur Champanhet" />
                 </picture>
                 <div className="home__top__name">
                     <h1>
