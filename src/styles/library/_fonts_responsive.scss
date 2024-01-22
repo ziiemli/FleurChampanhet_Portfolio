@@ -4,8 +4,14 @@
 
 @media screen and (min-width: 996px) {
     :root {
-        --home--h1: 4rem;
+        --home--h1: 3.4rem;
         --home--h1spacing: 0.875rem;
-        --home--02: 1.875rem;
+        --home--02: 1.8rem;
+    }
+    //Category
+    .category__topPart__text {
+        p {
+            letter-spacing: 0.5625rem;
+        }
     }
 }

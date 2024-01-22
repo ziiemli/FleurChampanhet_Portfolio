@@ -23,7 +23,7 @@ const Menu = () => {
 
     return (
         <div>
-            <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />
+            <img className="menu" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />
             {menu && (
                 <section className="menu__active">
                     <img className="header__burger menu__active__burger" src="/src/assets/Burger.svg" alt="Burger Logo" onClick={(e) => setMenu(!menu)} />

@@ -4,6 +4,12 @@
     overflow: hidden;
     padding-bottom: 4rem;
     &__top {
+        picture {
+            height: 19%;
+            img {
+                width: 100%;
+            }
+        }
         &__name {
             padding: 2.68rem 2.31rem 7.25rem 2.31rem;
             h1 {
@@ -14,10 +20,19 @@
                     margin-bottom: 1.3rem;
                 }
             }
-            &__discover {
+            &__discover{
                 display: none;
+                width:fit-content;
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
             }
         }
+    }
+    &__categories {
+        height: 100%;
     }
 }
 
@@ -26,9 +41,6 @@
 @media screen and (min-width: 996px) {
     .home {
         padding-bottom: 0;
-        .header {
-            position: absolute;
-        }
         picture img {
             width: 100%;
         }

@@ -2,6 +2,7 @@
 
 .category__topPart {
     width: 100%;
+    height: 100%;
     overflow: hidden;
     position: relative;
     margin-bottom: 4rem;
@@ -11,7 +12,10 @@
         flex-direction: column;
         position: absolute;
         text-align: center;
-        margin-top: 1.2rem;
+        top: 10rem;
+        h1 {
+            top: 0;
+        }
         p {
             margin-top: 7rem;
         }
@@ -21,7 +25,36 @@
             width: 100%;
             height: 9.4rem;
             object-fit: cover;
-            margin-top: 2.8rem;
+            margin-top: 11.7rem;
+        }
+    }
+}
+
+.category__project {
+    padding-left: 1.63rem;
+    padding-right: 1.63rem;
+}
+
+//_____RESPONSIVE CATEGORY_____//
+
+@media screen and (min-width: 996px) {
+    .category__topPart {
+        &__text{
+            width: fit-content;
+            text-align: left;
+            left: 22rem;
+            h1{
+                top: 0;
+            }
+            p{
+                margin-top: 2rem;
+            }
+        }
+        picture{
+            img{
+                height: 68vh;
+                margin-top: 0;
+            }
         }
     }
 }

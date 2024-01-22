@@ -5,10 +5,9 @@ import Menu from "./Menu"
 const Header = () => {
     return (
         <section className="header">
-            <Link to="/">
-                <img className="header__logo" src="/src/assets/Logo.svg" alt="Logo of Fleur Champanhet" />
+            <Link className="header__logo" to="/">
+                <img className="header__logo__img" src="/src/assets/Logo.svg" alt="Logo of Fleur Champanhet" />
             </Link>
-            {/* <img className="header__burger" src="/src/assets/Burger.svg" alt="Burger Logo" /> */}
             <Menu/>
         </section>
     )

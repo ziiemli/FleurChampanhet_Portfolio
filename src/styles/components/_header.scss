@@ -6,15 +6,17 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 4.12rem 1.62rem 0.75rem 1.62rem;
-    &__logo{
-        height: 2rem;
-        &:hover{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    &__logo {
+       &__img {
+        height: 2.5rem;
+       }
+        &:hover {
             scale: 1.2;
             transition: 0.5s;
         }
-    }
-    &__burger{
-        height: 1.5rem;
     }
 }
 
@@ -23,10 +25,10 @@
 @media screen and (min-width: 996px) {
     .header {
         padding: 3rem 3.4rem 0rem 3.4rem;
-        &__logo{
+        &__logo {
             height: 3.5rem;
         }
-        &__burger{
+        .menu {
             height: 2rem;
         }
     }

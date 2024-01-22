@@ -1,6 +1,7 @@
 import React from "react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import Project from "../components/Project"
 
 const Fiction = () => {
     return (
@@ -18,15 +19,8 @@ const Fiction = () => {
                     </picture>
                 </div>
             </section>
-            <section>
-                <article>
-                    <h2>Title</h2>
-                    <p>By</p>
-                    <p>date</p>
-                    <p>roles</p>
-                    <img src="" alt="" />
-                    <a href="">LINK</a>
-                </article>
+            <section className="category__project">
+                <Project title="fhwe" by="fwef" date="fkbe" roles="fbekf" srcMainImg="/src/assets/Fiction/test.jpg" alt="flsje" href="fej"/>
             </section>
             <Footer />
         </div>

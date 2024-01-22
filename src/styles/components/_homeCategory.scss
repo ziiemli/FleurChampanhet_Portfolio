@@ -1,27 +1,35 @@
 //_____HOMECATEGORY_____//
 
 .homeCategory {
+    width: 100%;
+    height: 100%;
     position: relative;
-    filter: grayscale(100%);
-    img {
+    overflow: hidden;
+    filter: grayscale(100);
+    transition: 0.5s ease-in-out;
+    &__img {
+        display: block;
         width: 100%;
         height: 100%;
-        // scale: 1.03;
+        transition: 0.5s ease-in-out;
     }
     h2 {
         position: absolute;
         left: 2rem;
         bottom: 3rem;
+        transition: 0.5s ease-in-out;
     }
 }
 
 .homeCategory:hover {
     filter: grayscale(0);
+    transition: 0.5s ease-in-out;
     h2 {
         scale: 1.15;
         transition: 0.5s ease-in-out;
     }
     img {
+        scale: 1.08;
         transition: 0.5s ease-in-out;
     }
 }
@@ -29,12 +37,13 @@
 //_____HOMECATEGORY RESPONSIVE_____//
 
 @media screen and (min-width: 996px) {
-    .homeCategory{
+    .nav {
         width: 50%;
-        h2 {
-            position: absolute;
-            left: 4.7rem;
-            bottom: 7.25rem;
+    }
+    .homeCategory {
+        h2{
+            left: 4.4rem;
+            bottom: 6.4rem;
         }
     }
 }
